@@ -1,6 +1,8 @@
 
 package com.project.smarthallticket.Entity;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,7 +18,10 @@ public class Student {
 	private int id;
 	private String fname;
 	private String lname;
-	private String aadharNumber;
+	private long aadharNumber;
+	private Date dob;
+	
+	
 	
 	public int getId() {
 		return id;
@@ -36,11 +41,17 @@ public class Student {
 	public void setLname(String lname) {
 		this.lname = lname;
 	}
-	public String getAadharNumber() {
+	public long getAadharNumber() {
 		return aadharNumber;
 	}
-	public void setAadharNumber(String aadharNumber) {
+	public void setAadharNumber(long aadharNumber) {
 		this.aadharNumber = aadharNumber;
+	}
+	public Date getDob() {
+		return dob;
+	}
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
 
 }

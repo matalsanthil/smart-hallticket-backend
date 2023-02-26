@@ -1,7 +1,6 @@
 package com.project.smarthallticket.Controllers;
 
 import java.util.List;
-import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +21,6 @@ public class StudentController {
 	public List<Student> getAllStudents() {
 		
 		List<Student> students = (List<Student>) studentRepository.findAll();
-		
 		return students;
 	}
 	
