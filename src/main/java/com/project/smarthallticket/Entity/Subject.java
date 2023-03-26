@@ -14,14 +14,14 @@ public class Subject {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	private int code;
+	private String code;
 	public int getId() {
 		return id;
 	}
 	public String getName() {
 		return name;
 	}
-	public int getCode() {
+	public String getCode() {
 		return code;
 	}
 	public void setId(int id) {
@@ -30,7 +30,7 @@ public class Subject {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setCode(int code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 	
