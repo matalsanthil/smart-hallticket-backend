@@ -25,6 +25,15 @@ public class StudentClassroom {
 	private int examSubjectId;
 	
 	private Date dateOfExam;
+	private int seatNumber;
+
+	public int getSeatNumber() {
+		return seatNumber;
+	}
+
+	public void setSeatNumber(int seatNumber) {
+		this.seatNumber = seatNumber;
+	}
 
 	public int getId() {
 		return id;

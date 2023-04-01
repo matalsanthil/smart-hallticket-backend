@@ -14,7 +14,15 @@ public class GetClassRoomResponseDto {
 	private Date dateOfExam;
 	private String classroom;
 	private String branchName;
+	private int seatNumber;
 	
+	
+	public int getSeatNumber() {
+		return seatNumber;
+	}
+	public void setSeatNumber(int seatNumber) {
+		this.seatNumber = seatNumber;
+	}
 	public String getBranchName() {
 		return branchName;
 	}

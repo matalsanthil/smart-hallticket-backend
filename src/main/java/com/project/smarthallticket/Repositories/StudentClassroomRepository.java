@@ -19,8 +19,10 @@ public interface StudentClassroomRepository extends CrudRepository<StudentClassr
 	@Query(
 			  value = "SELECT *\r\n"
 			  		+ "FROM student_classroom \r\n"
-			  		+ "WHERE student_id = :studentId and DATE(date_of_exam) = CURDATE()+1;", 
+			  		+ "WHERE student_id = :studentId and DATE(date_of_exam) = CURDATE();", 
 			  nativeQuery = true)
 	List<StudentClassroom> findByStudentIdAndCurrentDate(@Param("studentId") int studentId);
+
+	List<StudentClassroom> findByClassroomId(int id);
 
 }
